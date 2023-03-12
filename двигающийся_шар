@@ -1,0 +1,18 @@
+b=0
+mode="down"
+def setup():
+    size(600, 600)
+def draw():
+    global b,mode
+    background(0,255,0)
+    ellipse(b,b,50,50)
+    if mousePressed==False:
+        if mode=="down":
+            b=b+1
+        if mode=="up":
+            b=b-1
+        if b>600:
+            mode="up"
+        if b<0:
+            mode="down"
+        
