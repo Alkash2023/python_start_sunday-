@@ -1,0 +1,16 @@
+b=300
+c=300
+def setup():
+    size(600, 600)
+def draw():
+    global b,c
+    background(255,0,0)
+    if mousePressed:
+        rect(mouseX,mouseY,100,200)
+        c=mouseY
+        b=mouseX
+    else:
+        rect(b,c,100,200)
+        
+
+
