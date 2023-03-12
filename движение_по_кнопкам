@@ -1,0 +1,40 @@
+b=300
+c=300
+
+def setup():
+    size(600, 600)
+
+def draw():
+    global b,c
+    background(255,0,0)
+    
+    fill(255)
+    rect(350,500,100,50)#< кнопка влево
+    fill(0)
+    textSize(60)
+    text(u"<",390,540)
+    
+    fill(255)
+    rect(450,500,100,50)#> кнопка вправо
+    fill(0)
+    textSize(60)
+    text(u">",460,540)
+    
+    fill(255)
+    rect(420,430,60,70)# ^ кнопка вверх
+    fill(0)
+    textSize(60)
+    text(u"^",430,490)
+    
+    fill(0)
+    rect(b,c,100,100)# объект, который двигается в зависимости от нажатой кнопки
+    #если нажата кнопка влево
+    if mousePressed and mouseX>350 and mouseX<450 and mouseY>500 and mouseY<550:
+        b=b-1
+    #если нажата кнопка вправо
+    if mousePressed and mouseX>450 and mouseX<550 and mouseY>500 and mouseY<550:
+        b=b+1
+    #если нажата кнопка вверх
+    if mousePressed and mouseX>420 and mouseX<480 and mouseY>430 and mouseY<500:
+        c=c-1
+    
