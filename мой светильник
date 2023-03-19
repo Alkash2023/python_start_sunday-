@@ -1,0 +1,13 @@
+b=0
+mode="down"
+def setup():
+    size(600, 600)
+def draw():
+    global b, mode
+    background(b)
+    rect(200,100,50,50)
+    rect(200,30,50,50)
+    if mousePressed and mouseX>200 and mouseX<250 and mouseY>100 and mouseY<150:
+         b=255
+    if mousePressed and mouseX>200 and mouseX<250 and mouseY>30 and mouseY<80:
+        b=0
