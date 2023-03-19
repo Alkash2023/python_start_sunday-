@@ -1,0 +1,84 @@
+b=0
+mode="down"
+def setup():
+    size(600, 600)
+def draw():
+    global b, mode
+    background(0)
+    rect(b,350,50,50)
+    rect(b+50,350+50,60,50)
+    rect(b+50,350-50,50,50)
+    rect(b+100,350,50,50)
+    stroke(255,0,0)
+    line(b+60,350+50,300,100)
+    rect(1,50,800,100)
+    if mousePressed==False:
+        if mode=="down":
+            b=b+1
+        if mode=="up":
+            b=b-1
+        if b>600:
+            mode="up"
+        if b<0:
+            mode="down"
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
