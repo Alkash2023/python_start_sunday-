@@ -1,13 +1,19 @@
 b=0
 mode="down"
+c='222.jpg'
 def setup():
-    size(600, 600)
+    size(600, 800)
+    
 def draw():
-    global b, mode
+    global b, mode,c
     background(b)
+    img=loadImage(c)
+    image(img,250,150,425,450)
     rect(200,100,50,50)
     rect(200,30,50,50)
     if mousePressed and mouseX>200 and mouseX<250 and mouseY>100 and mouseY<150:
          b=255
+         c='111.jpg'
     if mousePressed and mouseX>200 and mouseX<250 and mouseY>30 and mouseY<80:
         b=0
+        c='222.jpg'
