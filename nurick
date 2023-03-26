@@ -1,13 +1,13 @@
 a=0
 mode='вправо'
-
+img=0
 def setup():
     size(600,600)
-    
+    global img
+    img=loadImage("1.jpg")
 def draw():
-    global a,mode
-    img=loadImage("gorod.jpg")
-    image(img,0,0,600,600)
+    global a,mode,img
+    image(img,0,0)
     fill(0, 206, 209)
     ellipse(a-100,300,250,250)
     fill(0)
